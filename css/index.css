@@ -14,6 +14,12 @@
   --primary-30: rgba(175, 180, 43, 0.3);
   --primary-weak: #c0ca33;
   --primary-weak-50: rgba(192, 202, 51, 0.5);
+  --primary: #980099;
+  --primary-70: rgba(152, 0, 153, 0.7);
+  --primary-50: rgba(152, 0, 153, 0.5);
+  --primary-30: rgba(152, 0, 153, 0.3);
+  --primary-weak: #980099;
+  --primary-weak-50: rgba(152, 0, 153, 0.5);
   --body-color: #5d5d5e;
   --body-color-5: rgba(93, 93, 94, 0.05);
   --body-bg-color: #00151f;
@@ -61,6 +67,12 @@
   --primary-30: rgba(175, 180, 43, 0.3);
   --primary-weak: #c0ca33;
   --primary-weak-50: rgba(192, 202, 51, 0.5);
+  --primary: #980099;
+  --primary-70: rgba(152, 0, 153, 0.7);
+  --primary-50: rgba(152, 0, 153, 0.5);
+  --primary-30: rgba(152, 0, 153, 0.3);
+  --primary-weak: #980099;
+  --primary-weak-50: rgba(152, 0, 153, 0.5);
   --body-color: #d1d9e9b3;
   --body-color-5: rgba(209, 217, 233, 0.05);
   --body-bg-color: #00151f;
@@ -3151,6 +3163,82 @@ details p {
     left: 20px;
   }
 }
+:root {
+  --twikoo-white: #fff;
+  --twikoo-fontcolor: #000;
+  --twikoo-background: #fff;
+  --twikoo-navbg: rgba(255, 255, 255, 0.9);
+  --twikoo-card-btn-bg: #f7f7fa;
+  --twikoo-post-blockquote-bg: #f2f5f7;
+  --twikoo-sceondbg: #f7f7fa;
+}
+:root.dark {
+  --twikoo-fontcolor: #fff;
+  --twikoo-background: #1e1e1e;
+  --twikoo-card-btn-bg: #3f3f3f;
+  --twikoo-post-blockquote-bg: #000;
+  --twikoo-sceondbg: #252627;
+}
+/* 评论 */
+/* ---------------------------------------------------------------- */
+/* 填写项标题 */
+.el-input-group__append,
+.el-input-group__prepend {
+  background-color: var(--twikoo-sceondbg) !important;
+  color: var(--twikoo-fontcolor) !important;
+  border: 0px solid var(--primary) !important;
+}
+/* 输入框 */
+.el-input__inner {
+  background: var(--twikoo-post-blockquote-bg) !important;
+  border: 0px solid var(--primary) !important;
+  color: var(--twikoo-fontcolor) !important;
+}
+/* 评论输入框 */
+.el-textarea__inner {
+  background: var(--twikoo-post-blockquote-bg) !important;
+  border: 0px solid var(--primary) !important;
+  color: var(--twikoo-fontcolor) !important;
+}
+/* 加载时背景颜色 */
+.el-loading-mask {
+  background-color: var(--twikoo-background) !important;
+}
+/* 评论博主标签圆角 */
+.tk-tag-green {
+  border-radius: 12px !important;
+  border: 0px solid #e1f3d8 !important;
+}
+/* 预览按钮 */
+.el-button {
+  background: var(--twikoo-card-btn-bg) !important;
+  border: 0px solid var(--primary) !important;
+  color: var(--twikoo-fontcolor) !important;
+}
+.el-button:hover {
+  background: var(--primary) !important;
+  color: var(--twikoo-white) !important;
+}
+/* 发送按钮正常状态 */
+.el-button--primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--twikoo-white) !important;
+}
+/* 发送按钮禁用状态 */
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover {
+  opacity: 0.4;
+}
+.tk-submit {
+  margin-top: none;
+}
+.tk-admin-container {
+  position: fixed !important;
+  z-index: 100;
+}
 .trm-read-mode {
   padding: 0;
   background-color: var(--theme-bg-color, #fcfcfe);
@@ -3805,4 +3893,20 @@ pre .coffeescript .title {
 .trm-top-bar .container .trm-left-side .trm-logo-frame img {
   height: 70%;
   width: auto !important;
+}
+:root {
+  --primary: #980099;
+  --primary-70: rgba(152, 0, 153, 0.7);
+  --primary-50: rgba(152, 0, 153, 0.5);
+  --primary-30: rgba(152, 0, 153, 0.3);
+  --primary-weak: #980099;
+  --primary-weak-50: rgba(152, 0, 153, 0.5);
+}
+:root.dark {
+  --primary: #980099;
+  --primary-70: rgba(152, 0, 153, 0.7);
+  --primary-50: rgba(152, 0, 153, 0.5);
+  --primary-30: rgba(152, 0, 153, 0.3);
+  --primary-weak: #980099;
+  --primary-weak-50: rgba(152, 0, 153, 0.5);
 }
