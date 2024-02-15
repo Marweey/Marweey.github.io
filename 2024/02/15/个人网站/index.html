@@ -7,22 +7,22 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="建站记​		先前在完成课程云计算作业时就见有同学制作了自己的个人主页，当时我浅薄的理解是需要购买服务器购买域名等各种，总之我的印象里是要花钱才可拥有的。便没有再向下研究，旋即忘却了。 ​		昨日闲逛知乎（或许是哔哩哔哩）刷到建个人主页的一个博主，在评论区了解到了hexo，猛然回想，当时不少同学使用的貌似就是它。遂决定在今日下午晕晕哥课上进行一番实践。 ​		参考文档，发现很多环境配置在67老师的软">
+<meta name="description" content="个人网站的经验写在前面下面所要讲的只是个人博客的搭建，类似于个人主页，可以投放文章、图片、视频、音乐等。个人网站有很多种搭建途径，现主要介绍本人正在使用的HEXO 你需要准备的   类别 具体    设备 一台Windows电脑（其余系统本人未尝试）   网络环境 需要能够访问GitHub、一个域名（可选）   软件环境 Node.js、Git、npm、任意比较正经的json编辑器（VsCode较">
 <meta property="og:type" content="article">
-<meta property="og:title" content="建站记">
-<meta property="og:url" content="http://example.com/2022/11/25/%E5%BB%BA%E7%AB%99%E8%AE%B0/index.html">
+<meta property="og:title" content="如何制作本网站">
+<meta property="og:url" content="http://example.com/2024/02/15/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.html">
 <meta property="og:site_name" content="幸得相识">
-<meta property="og:description" content="建站记​		先前在完成课程云计算作业时就见有同学制作了自己的个人主页，当时我浅薄的理解是需要购买服务器购买域名等各种，总之我的印象里是要花钱才可拥有的。便没有再向下研究，旋即忘却了。 ​		昨日闲逛知乎（或许是哔哩哔哩）刷到建个人主页的一个博主，在评论区了解到了hexo，猛然回想，当时不少同学使用的貌似就是它。遂决定在今日下午晕晕哥课上进行一番实践。 ​		参考文档，发现很多环境配置在67老师的软">
+<meta property="og:description" content="个人网站的经验写在前面下面所要讲的只是个人博客的搭建，类似于个人主页，可以投放文章、图片、视频、音乐等。个人网站有很多种搭建途径，现主要介绍本人正在使用的HEXO 你需要准备的   类别 具体    设备 一台Windows电脑（其余系统本人未尝试）   网络环境 需要能够访问GitHub、一个域名（可选）   软件环境 Node.js、Git、npm、任意比较正经的json编辑器（VsCode较">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-11-25T13:04:49.725Z">
-<meta property="article:modified_time" content="2023-03-14T15:02:07.807Z">
+<meta property="article:published_time" content="2024-02-15T07:35:42.194Z">
+<meta property="article:modified_time" content="2024-02-15T08:19:15.044Z">
 <meta property="article:author" content="Marwee">
 <meta name="twitter:card" content="summary">
 
     <meta name="keywords" content="记录">
 
 
-<title >建站记</title>
+<title >如何制作本网站</title>
 
 <!-- Favicon -->
 
@@ -61,7 +61,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Marwee","root":"/","typed_text":["SoftWarer","Student","NJUer"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"https://count.ayaya.beauty/get/@:marweey.github.io?theme=rule34","icon16":"/img/avatar.jpg","icon32":"/img/avatar.jpg","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"11/24/2022 17:00:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"trigger":"auto","path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2023-03-14 23:02:07"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-02-15 16:19:15"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -217,7 +217,7 @@
     <div class="trm-banner">
     
     <!-- banner cover -->
-    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="https://pic1.zhimg.com/v2-b3c2c6745b9421a13a3c4706b19223b3_r.jpg">
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
     <!-- banner cover end -->
     
 
@@ -233,10 +233,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            Hi my new friend!
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            建站记
+                            如何制作本网站
                         </h1>
 
                         
@@ -246,7 +246,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        2022
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -369,13 +369,13 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
-            11/25
+            02/15
         </div>
     </div>
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            21:04
+            15:35
         </div>
     </div>
     <div class="col-sm-4">
@@ -387,12 +387,55 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h1 id="建站记"><a href="#建站记" class="headerlink" title="建站记"></a>建站记</h1><p>​		先前在完成课程云计算作业时就见有同学制作了自己的个人主页，当时我浅薄的理解是需要购买服务器购买域名等各种，总之我的印象里是要花钱才可拥有的。便没有再向下研究，旋即忘却了。</p>
-<p>​		昨日闲逛知乎（或许是哔哩哔哩）刷到建个人主页的一个博主，在评论区了解到了hexo，猛然回想，当时不少同学使用的貌似就是它。遂决定在今日下午晕晕哥课上进行一番实践。</p>
-<p>​		参考文档，发现很多环境配置在67老师的软工二那边已然具备，于是急速开工，欣然上手。实操之后发现真是轻巧又方便，不过仅限于默认页面。在筛选一众主题之后，我发现了心仪的那款。进入作者github之后我慨叹，耐心写文档的coder简直是世界上最温柔的人。受益于作者的温柔，即使我前端没什么基础，也不难看明白这些代码，也可以自己删删改改样式，使得网页变成自己喜欢的样子。</p>
-<p>​		最后大约都完成了，我发现在作者本人的页面上有个“猫娘计数器”，想必是访客统计。我放不下，他有我也要有。但无码可读，迫不得已前往discuss询问。本来没有期望得到回复，于是自己研究了个把小时，找到了计数器的不太正经的官方文档，但是没有办法得到一个满意的container容纳它。正当我准备苦恼地进一步发掘css源码地时候，作者他回！复！了！我大喜过望，上手操作，数分钟搞定，光荣下班吃麦麦！</p>
-<p>​		这篇文章写在我刚咽下最后一口汉堡，仅流水作纪念！</p>
-<p>​		</p>
+    <h1 id="个人网站的经验"><a href="#个人网站的经验" class="headerlink" title="个人网站的经验"></a>个人网站的经验</h1><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>下面所要讲的只是个人博客的搭建，类似于个人主页，可以投放文章、图片、视频、音乐等。个人网站有很多种搭建途径，现主要介绍本人正在使用的HEXO</p>
+<h2 id="你需要准备的"><a href="#你需要准备的" class="headerlink" title="你需要准备的"></a>你需要准备的</h2><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具体</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>设备</td>
+<td>一台Windows电脑（其余系统本人未尝试）</td>
+</tr>
+<tr>
+<td>网络环境</td>
+<td>需要能够访问GitHub、一个域名（可选）</td>
+</tr>
+<tr>
+<td>软件环境</td>
+<td>Node.js、Git、npm、任意比较正经的json编辑器（VsCode较为轻量，推荐）、Typora（推荐）、PicGo（可选）</td>
+</tr>
+<tr>
+<td>存储环境</td>
+<td>一个位于你本机合适位置的存放博客文件的目录、一个图床（详见下文）</td>
+</tr>
+<tr>
+<td>个人能力</td>
+<td>知晓md语法、认识中文、懂得如何访问Github、认识相关英文单词、有良好的归档能力、有debug能力或良好的提问习惯、有自己看的过去的审美、一点点json语法</td>
+</tr>
+</tbody></table>
+<h2 id="你需要做的"><a href="#你需要做的" class="headerlink" title="你需要做的"></a>你需要做的</h2><ol>
+<li>打开搜索引擎，键入“HEXO”，打开任意教程（含官方），学习步骤并操作，直至成功初始化你的博客页面。</li>
+<li>在官方或互联网上挑选你喜爱的HEXO主题，建议挑选文档完备且在维护的（有较强前端码力的请忽略），并应用。</li>
+<li>依照你挑选的主题文档在你的本机创建相关目录，放入你喜欢的文章或图片等。</li>
+<li>更新、维护、debug，直至大功告成。</li>
+</ol>
+<h2 id="关于图床"><a href="#关于图床" class="headerlink" title="关于图床"></a>关于图床</h2><h3 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h3><p>你发布在文章中的图片在互联网其他人访问查看时需要一个公用的链接。</p>
+<h3 id="怎么用"><a href="#怎么用" class="headerlink" title="怎么用"></a>怎么用</h3><p>将图片放在你的图床中，将图床吐给你的图片链接贴在md文档中即可。</p>
+<h3 id="一些经验"><a href="#一些经验" class="headerlink" title="一些经验"></a>一些经验</h3><ol>
+<li>可以直接新建使用GitHub的一个仓库用于存放你的图片，坏处在于国内访问GitHub神鬼不定，容易加载失败，使用cdn加速也仅仅是有所改善而已。</li>
+<li>网络上杂七杂八的免费图床很多，不建议用，容易跑路导致全部丢失。</li>
+<li>可以使用付费服务，华为云、阿里云、腾讯云等的OBS服务都是不错的选择，物美价廉，几元一年数十GB空间，绰绰有余。</li>
+<li>上面表格提到的PicGo可以在这里使用，具体请移步搜索引擎。</li>
+</ol>
+<h2 id="关于域名"><a href="#关于域名" class="headerlink" title="关于域名"></a>关于域名</h2><p>如果你想要定制域名，请向各大服务商购买。</p>
+<p>建议使用HEXO自带的地址即可。</p>
+<h2 id="关于扩展"><a href="#关于扩展" class="headerlink" title="关于扩展"></a>关于扩展</h2><p>HEXO是很强大的一款框架，各个比较著名的主题也很强大，很多功能都可塞入，可以多多探索。</p>
+<h2 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h2><p>在配置nodejs与npm环境时可能遇到问题，按照报错搜寻并且解决即可。</p>
+<p>在编辑前端页面时可能遇到问题，建议搜索主题作者文档，或直接联系主题作者解决，不建议个人修改源码。</p>
+<h2 id="我的网站"><a href="#我的网站" class="headerlink" title="我的网站"></a>我的网站</h2><p><a target="_blank" rel="noopener" href="https://marweey.github.io/">幸得相识 (marweey.github.io)</a></p>
 
 </article>
     
@@ -408,12 +451,13 @@
         </h5>
     </div>
     
+    
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2022/11/30/2022%E5%88%9D%E9%9B%AA%E8%AE%B0/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/01/18/%E4%B8%80%E4%BA%9B%E5%8D%97%E4%BA%AC%E6%97%85%E6%B8%B8%E5%9B%9E%E5%BF%86/" class="trm-cover-frame trm-anima-link">
             
             
-                <img alt="cover" class="no-fancybox" src="https://marweey.obs.cn-east-3.myhuaweicloud.com/imgForBlog/snow_banner1.jpg">
+                <img alt="cover" class="no-fancybox" src="https://marweey.obs.cn-east-3.myhuaweicloud.com/imgForBlog/NJtravelCover.jpg">
             
         </a>
         
@@ -424,55 +468,19 @@
                 </a>
             </div>
             <h5>
-                <a href="/2022/11/30/2022%E5%88%9D%E9%9B%AA%E8%AE%B0/" class="trm-anima-link">
-                    2022初雪记
+                <a href="/2024/01/18/%E4%B8%80%E4%BA%9B%E5%8D%97%E4%BA%AC%E6%97%85%E6%B8%B8%E5%9B%9E%E5%BF%86/" class="trm-anima-link">
+                    《南京旅游回忆》
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>22/11/30</li>
-                <li>14:24</li>
+                <li>24/01/18</li>
+                <li>14:17</li>
                 
-                    <li>692</li>
+                    <li>788</li>
                 
                 
                     <li>2</li>
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2022/11/25/%E6%9B%B4%E6%96%B0%E7%BB%B4%E6%8A%A4%E6%97%A5%E5%BF%97/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" #.">
-                    未分类
-                </a>
-            </div>
-            <h5>
-                <a href="/2022/11/25/%E6%9B%B4%E6%96%B0%E7%BB%B4%E6%8A%A4%E6%97%A5%E5%BF%97/" class="trm-anima-link">
-                    更新/维护日志
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>22/11/25</li>
-                <li>17:55</li>
-                
-                    <li>323</li>
-                
-                
-                    <li>1</li>
                 
             </ul>
         </div>
