@@ -3910,3 +3910,11 @@ pre .coffeescript .title {
   --primary-weak: #980099;
   --primary-weak-50: rgba(152, 0, 153, 0.5);
 }
+.trm-top-bar,
+.trm-main-card,
+.trm-blog-card,
+.trm-timeline-content,
+.trm-blog-categories,
+footer {
+  background-image: url(/images/bg.svg);
+}
