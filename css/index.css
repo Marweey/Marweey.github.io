@@ -20985,9 +20985,9 @@ body[data-type="album"] #page .page-title {
   filter: brightness(0.9) saturate(1.2) contrast(1);
 }
 
-#album .card-album:hover > .card:not(:hover) .card_cover {
+/* #album .card-album:hover > .card:not(:hover) .card_cover {
   filter: brightness(0.5) saturate(0.9) contrast(1.2) blur(20px);
-}
+} */
 
 #album .card__content {
   left: 0;
